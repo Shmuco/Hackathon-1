@@ -25,7 +25,7 @@ body {
 
 .snake{
     background-color: green;
-    border: .25vmin, solid black;
+    border: .25vmin solid black;
     /* .25vmin menas the border will adjust based on screen size */
 }
 
