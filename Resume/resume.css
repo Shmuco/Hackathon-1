@@ -1,0 +1,104 @@
+section{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display:flex;
+    background-color: #e7b4e79e;;
+    position: relative;
+    padding: 2%;
+    border: hotpink;
+    border-style: solid;
+}
+.left{
+   background-color: #f5a6f59e; 
+   width: 30%;
+   /* height: 550px; */
+}
+.right{
+    
+    width: 60%;
+    height: 550px;
+}
+.image1{
+    margin-left: 26%;
+    margin-top: 17%;
+    border: hotpink;
+    border-style: solid;
+    width: 50%;
+    margin-bottom: 7%;
+
+}
+.logo1{
+    margin-left: 30%;
+    margin-top: 10%;
+    border: hotpink;
+    border-style: solid;
+    width: 28%;
+}
+.logo2{
+    
+    width: 28%;
+    margin-left: 30%;
+    margin-top: 13%;
+    border: hotpink;
+    border-style: solid;
+
+}
+.logo3{
+    width: 29%;
+    margin-left: 30%;
+    margin-top: 13%;
+    border: hotpink;
+    border-style: solid;
+}
+
+h2{
+    color: hotpink;
+    text-align: center;
+    font-weight: bold;
+}
+.normal{
+    color: rgb(146, 57, 102);
+    font-weight: bold;
+    text-align: center;
+}
+.textInfo{
+    color: rgb(146, 57, 102);
+    text-align: center;
+
+
+}
+.text{
+    color: rgb(146, 57, 102);
+    text-align: center;
+    margin-top: 7%;
+    margin-left: 5%;
+    list-style-position: inside;
+    line-height: 1.5em;
+
+
+}
+
+hr{
+    width: 500px;
+    float: left;
+    margin-right: 10%;
+}
+ul{
+    overflow:hidden;
+}
+li{
+    line-height:1.5em;
+    display:inline;
+    color: rgb(146, 57, 102);
+    text-align: center;
+    margin-top: 7%;
+    margin-left: 5%;
+    list-style-position: inside;
+    list-style-type: square;
+  
+  
+}
+#double li  { width:50%;} <span class="code-comment">/* 2 col */</span>
+#triple li  { width:33.333%; } <span class="code-comment">/* 3 col */</span>
+#quad li    { width:25%; } <span class="code-comment">/* 4 col */</span>
+#six li     { width:16.666%; } <span class="code-comment">/* 6 col */</span></code>
