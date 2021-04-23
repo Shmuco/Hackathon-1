@@ -1,5 +1,7 @@
 import { update as updateSnake ,draw as drawSnake, SNAKE_SPEED } from './snake.js'
 
+import { update as updateFood, draw as drawFood} from './food.js'
+
 // funtion to refersh the page in order to "repaint"
 let lastRenderTime = 0
 const gameBoard = document.getElementById("game-board")
@@ -25,9 +27,14 @@ window.requestAnimationFrame(main)
 
 function update(){ // Used to update position and food etc
     updateSnake()
+    updateFood()
 }
 
 
 function draw(){ // Used to draw the updated frame
+    gameBoard.innerHTML=""
     drawSnake(gameBoard)
+    drawFood(gameBoard)
+
+    
 }
