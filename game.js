@@ -11,7 +11,7 @@ const gameBoard = document.getElementById("game-board")
 
 function main(currentTime){
     if (gameOver){
-        if(confirm('You just lost, press ok to play again!')){
+        if(confirm('Press ok if you want to play again 😀')){
        window.location= '/'
     }
     return

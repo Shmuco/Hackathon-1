@@ -13,11 +13,13 @@ export function update(){
 }
 
 export function draw(gameBoard){
+    let chicken = "<i class='fas fa-drumstick-bite' style='font-size:36px'></i>"
     
         const foodElement = document.createElement('div')
         foodElement.style.gridRowStart = food.y
         foodElement.style.gridColumnStart = food.x
         foodElement.classList.add('food')
+        foodElement.innerHTML= chicken
         gameBoard.appendChild(foodElement)
         
     

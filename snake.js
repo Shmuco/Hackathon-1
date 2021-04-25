@@ -17,10 +17,12 @@ export function update(){
 }
 
 export function draw(gameBoard){
+    let head = '<i class="fas fa-flushed" style="font-size:40px"></i>'
     snakeBody.forEach(segmet => {
         const snakeElement = document.createElement('div')
         snakeElement.style.gridRowStart = segmet.y
         snakeElement.style.gridColumnStart = segmet.x
+        snakeElement.innerHTML=head
         snakeElement.classList.add('snake')
         gameBoard.appendChild(snakeElement)
         
