@@ -1,7 +1,7 @@
 import { getInputDirection } from "./input.js"
 
 
-export const SNAKE_SPEED = 5 //how many times per second the page refreshes
+export const SNAKE_SPEED = 10 //how many times per second the page refreshes
 const snakeBody = [{ x: 11, y:11}]
 let newSegments=0
 
