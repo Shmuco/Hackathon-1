@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #845EC2;
+  position:absolute;
+
+}
+.title{
+  grid-template-rows: 10% 90%;
+}
+
+h1{
+  grid-row-start:1 ;
+  font-family: "ErbosDraco1StNbpRegular-99V5"; src: url('ErbosDraco1StNbpRegular-99V5.ttf');
+  text-align: center;
+  color: #FFFFFF;
+  background: #005DFF;
+  text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
+}
+
+#game-board {
+  /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+  background: radial-gradient(circle, #C4FCEF 21%, #00C9A7 64%);
+  width: 80vmin;
+  height: 80vmin;
+  /* vimin fills based on the shortet side */
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+  /* fr gives each grid block a fraction of the height/width devided by 21.
+    This means the game will be responsive */
+  grid-column-start: 2;
+  grid-row-start: 1;
+
+
+}
+.button{
+  border: 1px solid #005DFF;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Raleway";
+  background-color: #00C9A7;
+  box-shadow: 10px 10px 33px 0px rgba(0,0,0,0.75);}
+
+.snake {
+  /* background-color: rgb(192, 93, 93);
+  border: .25vmin solid rgb(68, 57, 57); 
+  .25vmin menas the border will adjust based on screen size  */
+  color: #722672;
+ }
+
+.food {
+  /* background-color: green; */
+  /* border: .25vmin solid rgb(68, 57, 57); */
+  color:#722626;
+}
+
+#flex-container {
+  display: grid;
+  grid-template-columns: 5vmin auto 5vmin;
+  grid-template-rows: 80vmin 5vmin;
+  
+
+}
+
+#resume {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  writing-mode: vertical-rl ;
+  border-radius: 30px 0px 0px 30px;
+  text-orientation: upright;
+  letter-spacing: -5px;
+  border-right: 2px dashed #005DFF;
+  
+  
+
+}
+
+#linkedin {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-radius: 0px 0px 30px 30px;
+  border-top: 2px dashed #005DFF;
+  
+  
+}
+
+#github {
+  grid-column-start: 3;
+ 
+  grid-row-start: 3;
+  grid-row-start: 1;
+  border-radius: 0px 30px 30px 0px;
+  writing-mode: vertical-lr;
+  text-align: center;
+  /* height:50%; */
+  justify-content: center;
+  text-orientation: upright;
+  letter-spacing: -5px;
+  border-left: 2px dashed #005DFF;
+  
+
+
+}
